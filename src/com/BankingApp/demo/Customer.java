@@ -25,12 +25,8 @@ public class Customer {
 		accounts.add(a);
 		System.out.println("Account added");
 	}
-	public void showAcc() {
-		int i=1;
-		for(BankAccount a:accounts) {
-			System.out.println(i+"Accountnumber: "+a.getAccNo());
-			i++;
-		}
+	public List<BankAccount> showAcc() {
+		return accounts;
 	}
 	public void displayCustomer() {
 		System.out.println("Customer ID"+Cid+"Customer Name"+Cname+"Mail"+Cmail);
